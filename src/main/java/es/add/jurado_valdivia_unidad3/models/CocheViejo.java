@@ -15,5 +15,8 @@ public class CocheViejo extends Coche
 	@Column(length = 15)
 	private Integer nKilimetros;
 
-
+	public CocheViejo(Coche coche)
+	{
+		super(coche) ;
+	}
 }

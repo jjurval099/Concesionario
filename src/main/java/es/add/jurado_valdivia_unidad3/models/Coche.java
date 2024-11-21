@@ -17,6 +17,14 @@ import lombok.NoArgsConstructor;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Coche 
 {
+	public Coche(Coche coche)
+	{
+		this.matricula = coche.getMatricula() ;
+		this.marca 	   = coche.getMarca() ;
+		this.modelo    = coche.getModelo() ;
+		this.color     = coche.getColor() ;
+	}
+
 	@Id
 	private String matricula;
 	

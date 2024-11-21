@@ -1,12 +1,10 @@
 package es.add.jurado_valdivia_unidad3.interfaces;
 
-import java.util.Scanner;
-
-import es.add.jurado_valdivia_unidad3.utils.ConcesionarioError;
+import es.add.jurado_valdivia_unidad3.models.Coche;
 
 public interface IParseoCoche 
 {
 	
-	public void parseoCoche(Scanner scanner) throws ConcesionarioError; 
+	public Coche parseoCoche(String[] valores) ; 
 
 }
